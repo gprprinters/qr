@@ -2,87 +2,118 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>BPT Church, Malavilai Official | ஆதி பெந்தெகொஸ்தே சத்திய சபை</title>
   
-  <!-- Meta SEO & Social Sharing -->
-  <meta name="description" content="Official Bio & Links page for BPT Church (ஆதி பெந்தெகொஸ்தே சத்திய சபை), Malavilai. Connect via Phone, WhatsApp, YouTube, Facebook, Instagram, and Website.">
-  <meta name="theme-color" content="#f8fafc">
+  <!-- Meta SEO & Apple Mobile Web App -->
+  <meta name="description" content="Official Apple-inspired Bio & Links page for BPT Church (ஆதி பெந்தெகொஸ்தே சத்திய சபை), Malavilai. Connect via Phone, WhatsApp, YouTube, Facebook, Instagram, and Website.">
+  <meta name="theme-color" content="#f2f2f7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta property="og:title" content="BPT Church, Malavilai Official">
   <meta property="og:description" content="Official links, social media, contact info, and location for BPT Church Malavilai.">
   <meta property="og:image" content="bptc_church_logo.jpeg">
   <meta property="og:type" content="website">
 
-  <!-- Favicon -->
+  <!-- Favicon & Apple Touch Icon -->
   <link rel="icon" type="image/jpeg" href="bptc_church_logo.jpeg">
+  <link rel="apple-touch-icon" href="bptc_church_logo.jpeg">
 
-  <!-- Typography -->
+  <!-- Typography: Apple SF Pro System Fonts & Noto Sans Tamil -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* =========================================
-       CSS VARIABLES: Light (Default) & Dark Themes
-       ========================================= */
+    /* ==========================================================================
+       APPLE HIG DESIGN SYSTEM (iOS / macOS / visionOS Materials & Colors)
+       ========================================================================== */
     :root, [data-theme="light"] {
-      --bg-color: #f8fafc;
-      --bg-gradient: radial-gradient(circle at 50% -10%, #ffffff 0%, #f1f5f9 60%, #e2e8f0 100%);
-      --bg-watermark-opacity: 0.06;
-      --card-bg: rgba(255, 255, 255, 0.88);
-      --card-border: rgba(148, 163, 184, 0.28);
-      --card-hover-bg: #ffffff;
-      --card-hover-border: rgba(217, 119, 6, 0.45);
-      --primary-accent: #d97706;
-      --primary-accent-glow: rgba(217, 119, 6, 0.22);
-      --text-main: #0f172a;
-      --text-muted: #64748b;
-      --text-tamil: #1e293b;
+      /* Apple iOS Light System Backgrounds */
+      --ios-bg: #f2f2f7;
+      --ios-bg-overlay: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgba(242, 242, 247, 0.65) 100%);
+      --bg-watermark-opacity: 0.22; /* Noticeably enhanced background image visibility */
+
+      /* Apple Ultra-Thin Frosted Glass Material */
+      --card-bg: rgba(255, 255, 255, 0.76);
+      --card-border: rgba(255, 255, 255, 0.85);
+      --card-inner-shine: inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+      --card-hover-bg: rgba(255, 255, 255, 0.92);
+      --card-hover-border: rgba(255, 255, 255, 1);
+      
+      /* Apple iOS Typography & Accents */
+      --text-primary: #1c1c1e;
+      --text-secondary: #636366;
+      --text-tertiary: #8e8e93;
+      --text-tamil-sub: #854d0e;
       --tamil-title: #b45309;
-      --quick-btn-bg: rgba(255, 255, 255, 0.92);
-      --quick-btn-border: rgba(203, 213, 225, 0.8);
-      --quick-btn-hover: #ffffff;
-      --verified-color: #0284c7;
-      --pill-bg: rgba(255, 255, 255, 0.88);
-      --pill-border: rgba(203, 213, 225, 0.8);
-      --pill-text: #334155;
-      --shadow-sm: 0 3px 8px rgba(15, 23, 42, 0.06);
-      --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.12);
-      --map-border: rgba(203, 213, 225, 0.8);
-      --footer-bg: rgba(255, 255, 255, 0.94);
-      --footer-border: rgba(217, 119, 6, 0.32);
-      --gpr-glow-color: #d97706;
-      --gpr-glow-shadow: 0 0 14px rgba(217, 119, 6, 0.25);
+      --ios-accent: #007aff;
+      --ios-accent-rgb: 0, 122, 255;
+      
+      /* Apple Control Center / Segmented Pill */
+      --pill-bg: rgba(255, 255, 255, 0.82);
+      --pill-border: rgba(255, 255, 255, 0.9);
+      --pill-text: #1c1c1e;
+
+      /* Quick Action Widget Material */
+      --quick-widget-bg: rgba(255, 255, 255, 0.78);
+      --quick-widget-border: rgba(255, 255, 255, 0.9);
+
+      /* Apple Depth Shadows */
+      --shadow-apple-card: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+      --shadow-apple-card-hover: 0 12px 30px -4px rgba(0, 0, 0, 0.1), 0 4px 10px -2px rgba(0, 0, 0, 0.06);
+      --shadow-pill: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+      /* Footer */
+      --footer-bg: rgba(255, 255, 255, 0.85);
+      --footer-border: rgba(217, 119, 6, 0.35);
+      --gpr-glow: #d97706;
+      --gpr-shadow: 0 4px 20px rgba(217, 119, 6, 0.22);
+      --map-border: rgba(255, 255, 255, 0.85);
     }
 
     [data-theme="dark"] {
-      --bg-color: #080d19;
-      --bg-gradient: radial-gradient(circle at 50% 0%, #1e293b 0%, #0d1527 60%, #080d19 100%);
-      --bg-watermark-opacity: 0.055;
-      --card-bg: rgba(30, 41, 59, 0.65);
-      --card-border: rgba(255, 255, 255, 0.08);
-      --card-hover-bg: rgba(51, 65, 85, 0.85);
-      --card-hover-border: rgba(245, 158, 11, 0.4);
-      --primary-accent: #f59e0b;
-      --primary-accent-glow: rgba(245, 158, 11, 0.25);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-tamil: #cbd5e1;
+      /* Apple iOS Dark System Backgrounds */
+      --ios-bg: #000000;
+      --ios-bg-overlay: linear-gradient(180deg, rgba(20, 20, 24, 0.6) 0%, rgba(10, 10, 12, 0.8) 100%);
+      --bg-watermark-opacity: 0.20; /* Enhanced visible opacity in dark mode */
+
+      /* Apple Dark Ultra-Thin Frosted Glass Material */
+      --card-bg: rgba(28, 28, 30, 0.72);
+      --card-border: rgba(255, 255, 255, 0.14);
+      --card-inner-shine: inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
+      --card-hover-bg: rgba(44, 44, 46, 0.85);
+      --card-hover-border: rgba(255, 255, 255, 0.28);
+
+      /* Apple iOS Dark Typography */
+      --text-primary: #f2f2f7;
+      --text-secondary: #aeaeb2;
+      --text-tertiary: #636366;
+      --text-tamil-sub: #fbbf24;
       --tamil-title: #f59e0b;
-      --quick-btn-bg: rgba(255, 255, 255, 0.06);
-      --quick-btn-border: rgba(255, 255, 255, 0.1);
-      --quick-btn-hover: rgba(51, 65, 85, 0.85);
-      --verified-color: #38bdf8;
-      --pill-bg: rgba(255, 255, 255, 0.07);
-      --pill-border: rgba(255, 255, 255, 0.12);
-      --pill-text: #f1f5f9;
-      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.25);
-      --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.35);
-      --map-border: rgba(255, 255, 255, 0.1);
-      --footer-bg: rgba(30, 41, 59, 0.8);
+      --ios-accent: #0a84ff;
+      --ios-accent-rgb: 10, 132, 255;
+
+      /* Apple Control Center / Segmented Pill */
+      --pill-bg: rgba(44, 44, 46, 0.78);
+      --pill-border: rgba(255, 255, 255, 0.15);
+      --pill-text: #f2f2f7;
+
+      /* Quick Action Widget Material */
+      --quick-widget-bg: rgba(28, 28, 30, 0.76);
+      --quick-widget-border: rgba(255, 255, 255, 0.14);
+
+      /* Apple Depth Shadows */
+      --shadow-apple-card: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+      --shadow-apple-card-hover: 0 16px 42px 0 rgba(0, 0, 0, 0.6);
+      --shadow-pill: 0 4px 12px rgba(0, 0, 0, 0.35);
+
+      /* Footer */
+      --footer-bg: rgba(28, 28, 30, 0.82);
       --footer-border: rgba(245, 158, 11, 0.35);
-      --gpr-glow-color: #fbbf24;
-      --gpr-glow-shadow: 0 0 18px rgba(245, 158, 11, 0.45);
+      --gpr-glow: #fbbf24;
+      --gpr-shadow: 0 4px 25px rgba(245, 158, 11, 0.35);
+      --map-border: rgba(255, 255, 255, 0.12);
     }
 
     * {
@@ -90,25 +121,27 @@
       margin: 0;
       padding: 0;
       -webkit-tap-highlight-color: transparent;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg-color);
-      background-image: var(--bg-gradient);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Plus Jakarta Sans", sans-serif;
+      background-color: var(--ios-bg);
+      background-image: var(--ios-bg-overlay);
       background-attachment: fixed;
-      color: var(--text-main);
+      color: var(--text-primary);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 16px 36px;
-      line-height: 1.5;
+      padding: max(20px, env(safe-area-inset-top)) 16px max(36px, env(safe-area-inset-bottom));
+      line-height: 1.45;
       position: relative;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      transition: background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    /* Fixed Watermark Background (bptc_bg.jpg) with low opacity */
+    /* Fixed Watermark Background (bptc_bg.jpg) with higher, clearer opacity */
     body::before {
       content: '';
       position: fixed;
@@ -118,21 +151,22 @@
       bottom: 0;
       background-image: url('bptc_bg.jpg');
       background-size: cover;
-      background-position: center;
+      background-position: center 30%;
       background-repeat: no-repeat;
       opacity: var(--bg-watermark-opacity);
       pointer-events: none;
       z-index: -1;
-      transition: opacity 0.3s ease;
+      filter: contrast(1.05);
+      transition: opacity 0.35s ease;
     }
 
     .tamil-text {
-      font-family: 'Noto Sans Tamil', sans-serif;
+      font-family: 'Noto Sans Tamil', -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     .container {
       width: 100%;
-      max-width: 480px;
+      max-width: 460px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -140,72 +174,65 @@
       z-index: 1;
     }
 
-    /* =========================================
-       Top Utility Bar (Day/Light Switch & Share Profile)
-       ========================================= */
+    /* ==========================================================================
+       TOP UTILITY BAR (Apple Segmented Capsule Bar)
+       ========================================================================== */
     .top-utility-bar {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 20px;
+      gap: 12px;
+      margin-bottom: 22px;
     }
 
-    .icon-pill-btn {
+    .apple-pill-btn {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 7px 14px;
+      gap: 7px;
+      padding: 8px 16px;
       font-size: 13px;
       font-weight: 600;
+      letter-spacing: -0.01em;
       color: var(--pill-text);
       background: var(--pill-bg);
       border: 1px solid var(--pill-border);
-      border-radius: 9999px;
+      border-radius: 9999px; /* Apple capsule shape */
       cursor: pointer;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      box-shadow: var(--shadow-pill);
+      transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1), background 0.2s ease, box-shadow 0.2s ease;
       text-decoration: none;
-      box-shadow: var(--shadow-sm);
+      user-select: none;
     }
 
-    .icon-pill-btn:hover, .icon-pill-btn:active {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-color: var(--primary-accent);
+    .apple-pill-btn:hover {
+      transform: scale(1.03);
     }
 
-    .icon-pill-btn svg {
-      width: 14px;
-      height: 14px;
+    .apple-pill-btn:active {
+      transform: scale(0.96); /* Apple spring press feedback */
+    }
+
+    .apple-pill-btn svg {
+      width: 15px;
+      height: 15px;
       flex-shrink: 0;
     }
 
-    /* Theme Toggle Button Icons */
-    .theme-icon-sun {
-      display: none;
-    }
+    /* Theme Toggle Icons */
+    .theme-icon-sun { display: none; }
+    .theme-icon-moon { display: block; }
+    [data-theme="dark"] .theme-icon-sun { display: block; }
+    [data-theme="dark"] .theme-icon-moon { display: none; }
 
-    .theme-icon-moon {
-      display: block;
-    }
-
-    [data-theme="dark"] .theme-icon-sun {
-      display: block;
-    }
-
-    [data-theme="dark"] .theme-icon-moon {
-      display: none;
-    }
-
-    /* =========================================
-       Profile Header
-       ========================================= */
+    /* ==========================================================================
+       PROFILE HEADER (Apple iOS Squircle Badge & Typography)
+       ========================================================================== */
     .profile-header {
       text-align: center;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -217,179 +244,197 @@
     }
 
     .logo-img {
-      width: 104px;
-      height: 104px;
-      border-radius: 50%;
+      width: 108px;
+      height: 108px;
+      border-radius: 26px; /* Apple continuous squircle corner */
       object-fit: cover;
-      box-shadow: 0 0 0 3px var(--primary-accent), 0 8px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.6);
       background: #ffffff;
       transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 
     .logo-wrapper:hover .logo-img {
       transform: scale(1.04);
-      box-shadow: 0 0 0 4px var(--primary-accent), 0 10px 28px var(--primary-accent-glow);
     }
 
-    .verified-badge {
+    /* Apple Verified Seal (SF Symbols style) */
+    .verified-seal {
       position: absolute;
-      bottom: 2px;
-      right: 3px;
+      bottom: -4px;
+      right: -4px;
       background: #ffffff;
       border-radius: 50%;
-      width: 25px;
-      height: 25px;
+      width: 28px;
+      height: 28px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
     }
 
-    [data-theme="dark"] .verified-badge {
-      background: #0f172a;
+    [data-theme="dark"] .verified-seal {
+      background: #1c1c1e;
     }
 
-    .verified-badge svg {
-      width: 20px;
-      height: 20px;
-      fill: var(--verified-color);
+    .verified-seal svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--ios-accent);
     }
 
+    /* Apple Tag Pill */
     .church-badge-tag {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(16, 185, 129, 0.12);
-      border: 1px solid rgba(16, 185, 129, 0.35);
-      color: #059669;
+      background: rgba(52, 199, 89, 0.14);
+      border: 1px solid rgba(52, 199, 89, 0.35);
+      color: #15803d;
       font-size: 12.5px;
       font-weight: 600;
       padding: 3px 12px;
       border-radius: 9999px;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
     }
 
     [data-theme="dark"] .church-badge-tag {
-      color: #34d399;
+      color: #4ade80;
+      background: rgba(52, 199, 89, 0.18);
     }
 
     .tag-dot {
       width: 7px;
       height: 7px;
-      background-color: #10b981;
+      background-color: #22c55e;
       border-radius: 50%;
-      box-shadow: 0 0 8px #10b981;
-      animation: pulse 2s infinite;
+      box-shadow: 0 0 8px #22c55e;
+      animation: pulse 2.2s infinite ease-in-out;
     }
 
     @keyframes pulse {
-      0% { transform: scale(0.95); opacity: 0.8; }
-      50% { transform: scale(1.2); opacity: 1; }
-      100% { transform: scale(0.95); opacity: 0.8; }
+      0%, 100% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.25); opacity: 1; }
     }
 
     .church-title-en {
-      font-size: 22px;
+      font-size: 23px;
       font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--text-main);
-      margin-bottom: 3px;
+      letter-spacing: -0.025em;
+      color: var(--text-primary);
+      margin-bottom: 2px;
       line-height: 1.25;
     }
 
     .church-title-ta {
-      font-size: 18px;
+      font-size: 18.5px;
       font-weight: 700;
       color: var(--tamil-title);
       margin-bottom: 5px;
       line-height: 1.4;
+      letter-spacing: -0.01em;
     }
 
     .church-meta {
-      font-size: 13px;
-      color: var(--text-muted);
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      letter-spacing: -0.01em;
     }
 
-    /* =========================================
-       Quick Action Circle Buttons (Call, WhatsApp, Email, Map)
-       ========================================= */
-    .quick-actions {
+    /* ==========================================================================
+       QUICK ACTIONS (Apple Control Center Translucent Squircle Widgets)
+       ========================================================================== */
+    .quick-actions-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
       width: 100%;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
-    .quick-btn {
+    .quick-widget {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 6px;
-      padding: 12px 4px;
-      background: var(--quick-btn-bg);
-      border: 1px solid var(--quick-btn-border);
-      border-radius: 16px;
-      color: var(--text-main);
+      gap: 7px;
+      padding: 13px 4px 11px;
+      background: var(--quick-widget-bg);
+      border: 1px solid var(--quick-widget-border);
+      border-radius: 20px; /* Apple squircle */
+      color: var(--text-primary);
       text-decoration: none;
       font-size: 12px;
       font-weight: 600;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: var(--shadow-sm);
+      letter-spacing: -0.01em;
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      box-shadow: var(--shadow-apple-card);
+      box-shadow: var(--shadow-apple-card), var(--card-inner-shine);
+      transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1), background 0.2s ease, box-shadow 0.2s ease;
+      user-select: none;
     }
 
-    .quick-btn:hover, .quick-btn:active {
+    .quick-widget:hover {
       transform: translateY(-2px);
-      background: var(--quick-btn-hover);
-      border-color: var(--primary-accent);
-      box-shadow: var(--shadow-lg);
+      box-shadow: var(--shadow-apple-card-hover), var(--card-inner-shine);
     }
 
-    .quick-icon-wrap {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
+    .quick-widget:active {
+      transform: scale(0.94); /* Apple button tap depression */
+    }
+
+    /* Apple App Icon Circle Badge inside widget */
+    .widget-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px; /* Apple squircle proportion */
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
       transition: transform 0.2s ease;
     }
 
-    .quick-btn:hover .quick-icon-wrap {
-      transform: scale(1.1);
+    .quick-widget:hover .widget-icon-box {
+      transform: scale(1.06);
     }
 
-    .quick-btn.call .quick-icon-wrap { background: rgba(56, 189, 248, 0.16); color: #0284c7; }
-    .quick-btn.whatsapp .quick-icon-wrap { background: rgba(37, 211, 102, 0.16); color: #16a34a; }
-    .quick-btn.email .quick-icon-wrap { background: rgba(245, 158, 11, 0.16); color: #d97706; }
-    .quick-btn.directions .quick-icon-wrap { background: rgba(239, 68, 68, 0.16); color: #dc2626; }
-
-    [data-theme="dark"] .quick-btn.call .quick-icon-wrap { color: #38bdf8; }
-    [data-theme="dark"] .quick-btn.whatsapp .quick-icon-wrap { color: #25d366; }
-    [data-theme="dark"] .quick-btn.email .quick-icon-wrap { color: #fbbf24; }
-    [data-theme="dark"] .quick-btn.directions .quick-icon-wrap { color: #f87171; }
-
-    .quick-btn svg {
-      width: 20px;
-      height: 20px;
+    /* Apple-authentic Gradient Icons */
+    .widget-icon-call {
+      background: linear-gradient(180deg, #34d399 0%, #10b981 100%);
+    }
+    .widget-icon-wa {
+      background: linear-gradient(180deg, #2dd4bf 0%, #059669 100%);
+    }
+    .widget-icon-mail {
+      background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+    }
+    .widget-icon-nav {
+      background: linear-gradient(180deg, #f87171 0%, #dc2626 100%);
     }
 
-    /* =========================================
-       Links Cards
-       ========================================= */
+    .widget-icon-box svg {
+      width: 21px;
+      height: 21px;
+      stroke-width: 2.2;
+    }
+
+    /* ==========================================================================
+       SECTION HEADERS (Apple Grouped List Header Style)
+       ========================================================================== */
     .section-title {
       width: 100%;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      margin: 10px 0 10px 4px;
+      letter-spacing: 0.05em;
+      color: var(--text-tertiary);
+      margin: 12px 0 10px 6px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
     .section-title::after {
@@ -397,91 +442,92 @@
       flex: 1;
       height: 1px;
       background: var(--card-border);
+      opacity: 0.7;
     }
 
+    /* ==========================================================================
+       APPLE FROSTED CARDS (Continuous Squircle 22px, Liquid Glass Depth)
+       ========================================================================== */
     .links-group {
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 12px;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
-    .link-card {
+    .apple-link-card {
       display: flex;
       align-items: center;
-      padding: 13px 16px;
+      padding: 14px 16px;
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      border-radius: 16px;
+      border-radius: 22px; /* Apple continuous squircle */
       text-decoration: none;
-      color: var(--text-main);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: var(--shadow-sm);
+      color: var(--text-primary);
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      box-shadow: var(--shadow-apple-card), var(--card-inner-shine);
+      transition: transform 0.16s cubic-bezier(0.25, 1, 0.5, 1), background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
       position: relative;
       overflow: hidden;
+      user-select: none;
     }
 
-    .link-card::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: transparent;
-      transition: background 0.2s ease;
-    }
-
-    .link-card:hover, .link-card:active {
+    .apple-link-card:hover {
       transform: translateY(-2px) scale(1.008);
       background: var(--card-hover-bg);
       border-color: var(--card-hover-border);
-      box-shadow: var(--shadow-lg);
+      box-shadow: var(--shadow-apple-card-hover), var(--card-inner-shine);
     }
 
-    .link-card:hover::before {
-      background: var(--primary-accent);
+    .apple-link-card:active {
+      transform: scale(0.975); /* Apple spring haptic feedback */
     }
 
-    .link-icon-box {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
+    /* Apple App Squircle Icon (1:1 iOS App Icon Proportion) */
+    .apple-app-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12.5px; /* iOS App Icon corner curvature */
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
       margin-right: 14px;
-      background: rgba(0, 0, 0, 0.04);
-      border: 1px solid var(--card-border);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.35);
       transition: transform 0.2s ease;
     }
 
-    .link-card:hover .link-icon-box {
-      transform: scale(1.08);
+    .apple-link-card:hover .apple-app-icon {
+      transform: scale(1.06);
     }
 
-    .link-icon-box svg {
-      width: 22px;
-      height: 22px;
+    .apple-app-icon svg {
+      width: 24px;
+      height: 24px;
     }
 
-    .icon-website { color: #0284c7; background: rgba(2, 132, 199, 0.12); }
-    .icon-youtube { color: #dc2626; background: rgba(220, 38, 38, 0.12); }
-    .icon-facebook { color: #2563eb; background: rgba(37, 99, 235, 0.12); }
-    .icon-instagram { color: #db2777; background: rgba(219, 39, 119, 0.12); }
-    .icon-mail-spiritual { color: #d97706; background: rgba(217, 119, 6, 0.12); }
-    .icon-mail-admin { color: #059669; background: rgba(5, 150, 105, 0.12); }
-
-    [data-theme="dark"] .icon-website { color: #38bdf8; background: rgba(56, 189, 248, 0.15); }
-    [data-theme="dark"] .icon-youtube { color: #ff4d4d; background: rgba(255, 0, 0, 0.15); }
-    [data-theme="dark"] .icon-facebook { color: #3b82f6; background: rgba(59, 130, 246, 0.15); }
-    [data-theme="dark"] .icon-instagram { color: #f43f5e; background: rgba(244, 63, 94, 0.15); }
-    [data-theme="dark"] .icon-mail-spiritual { color: #fbbf24; background: rgba(251, 191, 36, 0.15); }
-    [data-theme="dark"] .icon-mail-admin { color: #34d399; background: rgba(52, 211, 153, 0.15); }
+    /* Authentic Apple App Gradients */
+    .icon-safari-web {
+      background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+    }
+    .icon-youtube-app {
+      background: linear-gradient(180deg, #ff4b4b 0%, #e11d48 100%);
+    }
+    .icon-facebook-app {
+      background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
+    }
+    .icon-instagram-app {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+    .icon-spiritual-mail {
+      background: linear-gradient(180deg, #fbbf24 0%, #d97706 100%);
+    }
+    .icon-admin-mail {
+      background: linear-gradient(180deg, #34d399 0%, #059669 100%);
+    }
 
     .link-info {
       flex-grow: 1;
@@ -491,9 +537,10 @@
     }
 
     .link-title {
-      font-size: 15px;
+      font-size: 15.5px;
       font-weight: 700;
-      color: var(--text-main);
+      letter-spacing: -0.015em;
+      color: var(--text-primary);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -501,99 +548,103 @@
 
     .link-subtitle {
       font-size: 12.5px;
-      color: var(--text-muted);
+      color: var(--text-secondary);
       margin-top: 1px;
+      letter-spacing: -0.01em;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
-    .link-arrow {
-      color: var(--text-muted);
+    /* Apple SF Chevron Accessory */
+    .apple-chevron {
+      color: var(--text-tertiary);
       flex-shrink: 0;
       margin-left: 10px;
+      display: flex;
+      align-items: center;
       transition: transform 0.2s ease, color 0.2s ease;
     }
 
-    .link-card:hover .link-arrow {
+    .apple-link-card:hover .apple-chevron {
       transform: translateX(3px);
-      color: var(--primary-accent);
+      color: var(--ios-accent);
     }
 
-    .link-arrow svg {
+    .apple-chevron svg {
       width: 18px;
       height: 18px;
     }
 
-    /* =========================================
-       Headquarters Address & Live Embedded Map Card
-       ========================================= */
+    /* ==========================================================================
+       HEADQUARTERS & LIVE MAP CARD (Apple Maps Style)
+       ========================================================================== */
     .address-card {
       width: 100%;
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      border-radius: 18px;
-      padding: 16px;
-      margin-bottom: 24px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: var(--shadow-sm);
+      border-radius: 24px; /* Apple squircle */
+      padding: 18px;
+      margin-bottom: 26px;
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      box-shadow: var(--shadow-apple-card), var(--card-inner-shine);
+      transition: box-shadow 0.2s ease;
     }
 
     .address-header {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       margin-bottom: 12px;
     }
 
     .address-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      background: rgba(239, 68, 68, 0.14);
-      color: #dc2626;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #f87171 0%, #dc2626 100%);
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-    }
-
-    [data-theme="dark"] .address-icon {
-      color: #f87171;
+      box-shadow: 0 4px 10px rgba(220, 38, 38, 0.25);
     }
 
     .address-heading {
-      font-size: 14.5px;
+      font-size: 15px;
       font-weight: 700;
-      color: var(--text-main);
+      letter-spacing: -0.015em;
+      color: var(--text-primary);
     }
 
     .address-body-ta {
       font-size: 13.5px;
       line-height: 1.55;
-      color: var(--text-tamil);
+      color: var(--text-primary);
       margin-bottom: 6px;
       font-weight: 500;
     }
 
     .address-body-en {
-      font-size: 12.5px;
+      font-size: 13px;
       line-height: 1.5;
-      color: var(--text-muted);
+      color: var(--text-secondary);
       margin-bottom: 14px;
+      letter-spacing: -0.01em;
     }
 
-    /* Embedded Google Map Container */
+    /* Embedded Google Map (Curved Apple Window) */
     .map-embed-container {
       width: 100%;
-      height: 190px;
-      border-radius: 12px;
+      height: 195px;
+      border-radius: 16px;
       overflow: hidden;
       margin-bottom: 14px;
       border: 1px solid var(--map-border);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      background: #e2e8f0;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      background: #e5e5ea;
     }
 
     .map-embed-container iframe {
@@ -609,81 +660,90 @@
       gap: 10px;
     }
 
-    .addr-btn {
+    .apple-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 7px;
-      padding: 9px 12px;
-      border-radius: 10px;
-      font-size: 12.5px;
+      padding: 11px 14px;
+      border-radius: 14px; /* Apple squircle */
+      font-size: 13px;
       font-weight: 600;
+      letter-spacing: -0.01em;
       cursor: pointer;
       text-decoration: none;
-      transition: all 0.2s ease;
+      transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1), background 0.2s ease, filter 0.2s ease;
+      user-select: none;
     }
 
-    .addr-btn-primary {
-      background: #dc2626;
+    .apple-btn:active {
+      transform: scale(0.96);
+    }
+
+    .apple-btn-primary {
+      background: linear-gradient(180deg, #dc2626 0%, #b91c1c 100%);
       color: #ffffff;
       border: none;
+      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
     }
 
-    .addr-btn-primary:hover, .addr-btn-primary:active {
-      background: #b91c1c;
-      transform: translateY(-1px);
+    .apple-btn-primary:hover {
+      filter: brightness(1.06);
     }
 
-    .addr-btn-secondary {
-      background: var(--quick-btn-bg);
-      color: var(--text-main);
+    .apple-btn-secondary {
+      background: var(--pill-bg);
+      color: var(--text-primary);
       border: 1px solid var(--card-border);
     }
 
-    .addr-btn-secondary:hover, .addr-btn-secondary:active {
+    .apple-btn-secondary:hover {
       background: var(--card-hover-bg);
-      border-color: var(--primary-accent);
-      transform: translateY(-1px);
     }
 
-    .addr-btn svg {
-      width: 15px;
-      height: 15px;
+    .apple-btn svg {
+      width: 16px;
+      height: 16px;
     }
 
-    /* =========================================
-       Footer: Powered by G.P.R Offset Printers
-       ========================================= */
+    /* ==========================================================================
+       FOOTER: POWERED BY G.P.R OFFSET PRINTERS (Apple Glass Capsule)
+       ========================================================================== */
     footer {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: 8px;
+      margin-top: 10px;
       text-align: center;
     }
 
-    .gpr-footer-card {
+    .gpr-apple-card {
       display: inline-flex;
       flex-direction: column;
       align-items: center;
-      gap: 5px;
-      padding: 12px 22px;
-      border-radius: 20px;
+      gap: 6px;
+      padding: 13px 24px;
+      border-radius: 24px; /* Apple squircle */
       background: var(--footer-bg);
       border: 1px solid var(--footer-border);
       text-decoration: none;
-      box-shadow: var(--gpr-glow-shadow);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      box-shadow: var(--gpr-shadow), var(--card-inner-shine);
+      transition: transform 0.16s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      user-select: none;
     }
 
-    .gpr-footer-card:hover, .gpr-footer-card:active {
+    .gpr-apple-card:hover {
       transform: translateY(-2px) scale(1.02);
-      border-color: var(--gpr-glow-color);
-      box-shadow: 0 0 22px var(--gpr-glow-color);
+      border-color: var(--gpr-glow);
+      box-shadow: 0 8px 30px rgba(217, 119, 6, 0.38), var(--card-inner-shine);
+    }
+
+    .gpr-apple-card:active {
+      transform: scale(0.97);
     }
 
     .gpr-powered-tag {
@@ -691,7 +751,7 @@
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--text-secondary);
     }
 
     .gpr-brand-row {
@@ -710,17 +770,17 @@
     }
 
     .gpr-brand-name {
-      color: var(--gpr-glow-color);
+      color: var(--gpr-glow);
       font-size: 14.5px;
       font-weight: 800;
-      letter-spacing: 0.01em;
-      text-shadow: 0 0 8px var(--primary-accent-glow);
+      letter-spacing: -0.01em;
+      text-shadow: 0 0 10px rgba(217, 119, 6, 0.35);
     }
 
     .gpr-ext-icon {
-      width: 13px;
-      height: 13px;
-      color: var(--gpr-glow-color);
+      width: 14px;
+      height: 14px;
+      color: var(--gpr-glow);
       opacity: 0.85;
       flex-shrink: 0;
     }
@@ -728,46 +788,49 @@
     .footer-tagline {
       font-size: 11.5px;
       line-height: 1.55;
-      color: var(--text-muted);
+      color: var(--text-secondary);
       margin-top: 10px;
       max-width: 440px;
       padding: 0 12px;
       font-weight: 500;
-      opacity: 0.9;
+      letter-spacing: -0.01em;
+      opacity: 0.95;
     }
 
-    /* Toast Notification */
-    .toast {
+    /* Apple Toast Notification (Dynamic Island / Capsule Style) */
+    .apple-toast {
       position: fixed;
-      bottom: 24px;
+      bottom: max(24px, env(safe-area-inset-bottom));
       left: 50%;
       transform: translateX(-50%) translateY(100px);
-      background: #0f172a;
+      background: rgba(28, 28, 30, 0.94);
       color: #ffffff;
-      padding: 10px 18px;
+      padding: 10px 20px;
       border-radius: 9999px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-      font-size: 13px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      font-size: 13.5px;
       font-weight: 600;
       display: flex;
       align-items: center;
       gap: 8px;
       opacity: 0;
       pointer-events: none;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 9999;
     }
 
-    .toast.show {
+    .apple-toast.show {
       transform: translateX(-50%) translateY(0);
       opacity: 1;
     }
 
-    .toast svg {
+    .apple-toast svg {
       width: 16px;
       height: 16px;
-      fill: #10b981;
+      fill: #34c759;
     }
   </style>
 </head>
@@ -775,12 +838,12 @@
 
   <div class="container">
 
-    <!-- Top Utility Bar: Day/Light Switch and Share Profile -->
+    <!-- Top Utility Bar: Apple Segmented Capsule (Day/Light Switch & Share Profile) -->
     <div class="top-utility-bar">
-      <!-- Day/Night Switch (Default Light) -->
-      <button class="icon-pill-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Day and Night mode" title="Switch Theme">
+      <!-- Apple Day/Night Switch -->
+      <button class="apple-pill-btn" id="themeToggleBtn" aria-label="Toggle Day and Night mode" title="Switch Theme">
         <!-- Sun Icon (shown in Dark mode) -->
-        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
           <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -792,15 +855,15 @@
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
         <!-- Moon Icon (shown in Light mode) -->
-        <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
         <span id="themeToggleLabel">Dark</span>
       </button>
 
-      <!-- Share Button -->
-      <button class="icon-pill-btn" id="shareBtn" aria-label="Share this profile" title="Share profile link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Apple Share Capsule -->
+      <button class="apple-pill-btn" id="shareBtn" aria-label="Share this profile" title="Share profile link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="18" cy="5" r="3"></circle>
           <circle cx="6" cy="12" r="3"></circle>
           <circle cx="18" cy="19" r="3"></circle>
@@ -811,11 +874,11 @@
       </button>
     </div>
 
-    <!-- Profile Header -->
+    <!-- Profile Header (Apple Squircle Avatar & Typography) -->
     <header class="profile-header">
       <div class="logo-wrapper">
         <img class="logo-img" src="bptc_church_logo.jpeg" alt="BPT Church Official Logo">
-        <div class="verified-badge" title="Official Verified Church Account">
+        <div class="verified-seal" title="Official Verified Church Account">
           <svg viewBox="0 0 24 24">
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
           </svg>
@@ -832,12 +895,12 @@
       <p class="church-meta">Bible Pentecostal Truth Church • Official Links & Contact</p>
     </header>
 
-    <!-- 4-Button Quick Action Row -->
-    <div class="quick-actions">
+    <!-- 4-Button Quick Action Row (Apple Control Center Translucent Squircles) -->
+    <div class="quick-actions-grid">
       <!-- Call -->
-      <a href="tel:+919443016450" class="quick-btn call" aria-label="Call Church">
-        <div class="quick-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <a href="tel:+919443016450" class="quick-widget" aria-label="Call Church">
+        <div class="widget-icon-box widget-icon-call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
         </div>
@@ -845,8 +908,8 @@
       </a>
 
       <!-- WhatsApp -->
-      <a href="https://wa.me/919443016450?text=Greetings%2C%20BPT%20Church%20Malavilai" target="_blank" rel="noopener noreferrer" class="quick-btn whatsapp" aria-label="WhatsApp Message">
-        <div class="quick-icon-wrap">
+      <a href="https://wa.me/919443016450?text=Greetings%2C%20BPT%20Church%20Malavilai" target="_blank" rel="noopener noreferrer" class="quick-widget" aria-label="WhatsApp Message">
+        <div class="widget-icon-box widget-icon-wa">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.53C8.86 7.53 8.56 7.6 8.31 7.87C8.06 8.14 7.35 8.8 7.35 10.15C7.35 11.5 8.33 12.8 8.47 12.98C8.61 13.16 10.37 15.88 13.1 16.94C15.37 17.82 15.83 17.65 16.32 17.6C16.81 17.55 17.91 16.94 18.14 16.3C18.37 15.66 18.37 15.11 18.3 15C18.23 14.89 18.05 14.82 17.78 14.69C17.51 14.55 16.19 13.9 15.94 13.81C15.69 13.72 15.51 13.68 15.33 13.95C15.15 14.22 14.64 14.82 14.48 15C14.33 15.19 14.17 15.21 13.9 15.08C13.63 14.94 12.76 14.66 11.72 13.74C10.91 13.02 10.36 12.13 10.2 11.86C10.04 11.59 10.18 11.44 10.32 11.31C10.45 11.18 10.6 10.98 10.74 10.82C10.88 10.66 10.93 10.54 11.02 10.36C11.11 10.18 11.07 10.02 11 9.89C10.93 9.76 10.37 8.39 10.14 7.84C9.92 7.31 9.69 7.38 9.53 7.37L9.04 7.53Z"/>
           </svg>
@@ -855,9 +918,9 @@
       </a>
 
       <!-- Email -->
-      <a href="mailto:spiritual@bptchurch.org" class="quick-btn email" aria-label="Send Email">
-        <div class="quick-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <a href="mailto:spiritual@bptchurch.org" class="quick-widget" aria-label="Send Email">
+        <div class="widget-icon-box widget-icon-mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
@@ -866,9 +929,9 @@
       </a>
 
       <!-- Directions -->
-      <a href="https://maps.app.goo.gl/dvTGBeAuhQ67yqmF6?g_st=ic" target="_blank" rel="noopener noreferrer" class="quick-btn directions" aria-label="Church Map Location">
-        <div class="quick-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <a href="https://maps.app.goo.gl/dvTGBeAuhQ67yqmF6?g_st=ic" target="_blank" rel="noopener noreferrer" class="quick-widget" aria-label="Church Map Location">
+        <div class="widget-icon-box widget-icon-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
             <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
           </svg>
         </div>
@@ -876,24 +939,23 @@
       </a>
     </div>
 
-    <!-- Primary Links Section -->
+    <!-- Primary Links Section (Apple Frosted Squircle Cards) -->
     <div class="section-title">Official Online Channels</div>
     <div class="links-group">
 
       <!-- Official Website -->
-      <a href="https://bptchurch.org/" target="_blank" rel="noopener noreferrer" class="link-card">
-        <div class="link-icon-box icon-website">
+      <a href="https://bptchurch.org/" target="_blank" rel="noopener noreferrer" class="apple-link-card">
+        <div class="apple-app-icon icon-safari-web">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
           </svg>
         </div>
         <div class="link-info">
           <span class="link-title">Official Website</span>
           <span class="link-subtitle">bptchurch.org • Ministries & Info</span>
         </div>
-        <div class="link-arrow">
+        <div class="apple-chevron">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -901,8 +963,8 @@
       </a>
 
       <!-- YouTube Channel -->
-      <a href="https://youtube.com/@bptchurch?si=BUdBBcxmonquo7_X" target="_blank" rel="noopener noreferrer" class="link-card">
-        <div class="link-icon-box icon-youtube">
+      <a href="https://youtube.com/@bptchurch?si=BUdBBcxmonquo7_X" target="_blank" rel="noopener noreferrer" class="apple-link-card">
+        <div class="apple-app-icon icon-youtube-app">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
           </svg>
@@ -911,7 +973,7 @@
           <span class="link-title">YouTube Channel</span>
           <span class="link-subtitle">@bptchurch • Sermons, Live Worship & Songs</span>
         </div>
-        <div class="link-arrow">
+        <div class="apple-chevron">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -919,8 +981,8 @@
       </a>
 
       <!-- Facebook Page -->
-      <a href="https://www.facebook.com/share/1DWiR5E3ru/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="link-card">
-        <div class="link-icon-box icon-facebook">
+      <a href="https://www.facebook.com/share/1DWiR5E3ru/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="apple-link-card">
+        <div class="apple-app-icon icon-facebook-app">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
           </svg>
@@ -929,7 +991,7 @@
           <span class="link-title">Facebook Page</span>
           <span class="link-subtitle">BPT Church Community Updates</span>
         </div>
-        <div class="link-arrow">
+        <div class="apple-chevron">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -937,8 +999,8 @@
       </a>
 
       <!-- Instagram Profile -->
-      <a href="https://www.instagram.com/bpt_church_malavilai?gwpx=MTlsaTMzZWYxcHI5ZA==" target="_blank" rel="noopener noreferrer" class="link-card">
-        <div class="link-icon-box icon-instagram">
+      <a href="https://www.instagram.com/bpt_church_malavilai?gwpx=MTlsaTMzZWYxcHI5ZA==" target="_blank" rel="noopener noreferrer" class="apple-link-card">
+        <div class="apple-app-icon icon-instagram-app">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -949,7 +1011,7 @@
           <span class="link-title">Instagram Profile</span>
           <span class="link-subtitle">@bpt_church_malavilai</span>
         </div>
-        <div class="link-arrow">
+        <div class="apple-chevron">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -963,8 +1025,8 @@
     <div class="links-group">
 
       <!-- Spiritual Email -->
-      <a href="mailto:spiritual@bptchurch.org" class="link-card">
-        <div class="link-icon-box icon-mail-spiritual">
+      <a href="mailto:spiritual@bptchurch.org" class="apple-link-card">
+        <div class="apple-app-icon icon-spiritual-mail">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
@@ -974,7 +1036,7 @@
           <span class="link-title">Spiritual & Prayer Request</span>
           <span class="link-subtitle">spiritual@bptchurch.org</span>
         </div>
-        <div class="link-arrow">
+        <div class="apple-chevron">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -982,8 +1044,8 @@
       </a>
 
       <!-- Administrative Email -->
-      <a href="mailto:bptcmalavilai@gmail.com" class="link-card">
-        <div class="link-icon-box icon-mail-admin">
+      <a href="mailto:bptcmalavilai@gmail.com" class="apple-link-card">
+        <div class="apple-app-icon icon-admin-mail">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
           </svg>
@@ -992,7 +1054,7 @@
           <span class="link-title">Office & General Administration</span>
           <span class="link-subtitle">bptcmalavilai@gmail.com</span>
         </div>
-        <div class="link-arrow">
+        <div class="apple-chevron">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -1006,14 +1068,14 @@
     <div class="address-card">
       <div class="address-header">
         <div class="address-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
         </div>
         <div>
           <div class="address-heading">Church Headquarters (தலைமை இடம்)</div>
-          <div style="font-size: 12px; color: var(--text-muted);">Malavilai, Kanyakumari District</div>
+          <div style="font-size: 12.5px; color: var(--text-secondary);">Malavilai, Kanyakumari District</div>
         </div>
       </div>
 
@@ -1027,7 +1089,7 @@
         BPT Church, Malavilai Road, Cheruppaloor Post, Pin - 629 161, Kanyakumari District, Tamil Nadu, India.
       </div>
 
-      <!-- Live Google Map Embed -->
+      <!-- Live Google Map Embed (Curved Window) -->
       <div class="map-embed-container">
         <iframe 
           title="BPT Church Malavilai Location Map"
@@ -1038,16 +1100,16 @@
         </iframe>
       </div>
 
-      <!-- Map & Copy Actions -->
+      <!-- Map & Copy Actions (Apple Buttons) -->
       <div class="address-actions">
-        <a href="https://maps.app.goo.gl/dvTGBeAuhQ67yqmF6?g_st=ic" target="_blank" rel="noopener noreferrer" class="addr-btn addr-btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <a href="https://maps.app.goo.gl/dvTGBeAuhQ67yqmF6?g_st=ic" target="_blank" rel="noopener noreferrer" class="apple-btn apple-btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
           </svg>
           <span>Open in Maps</span>
         </a>
-        <button id="copyAddressBtn" class="addr-btn addr-btn-secondary" type="button">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <button id="copyAddressBtn" class="apple-btn apple-btn-secondary" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
           </svg>
@@ -1056,9 +1118,9 @@
       </div>
     </div>
 
-    <!-- Footer: Powered by G.P.R Offset Printers (Clickable with Glow Effect) -->
+    <!-- Footer: Powered by G.P.R Offset Printers (Apple Glass Capsule) -->
     <footer>
-      <a href="http://gprprinters.vercel.app" target="_blank" rel="noopener noreferrer" class="gpr-footer-card" title="Visit G.P.R Offset Printers">
+      <a href="http://gprprinters.vercel.app" target="_blank" rel="noopener noreferrer" class="gpr-apple-card" title="Visit G.P.R Offset Printers">
         <span class="gpr-powered-tag">POWERED BY</span>
         <div class="gpr-brand-row">
           <img src="gpr_logo_250px.png" alt="G.P.R Offset Printers Logo" class="gpr-logo">
@@ -1075,8 +1137,8 @@
 
   </div>
 
-  <!-- Toast Element -->
-  <div class="toast" id="toastBox">
+  <!-- Apple Toast Notification (Dynamic Capsule) -->
+  <div class="apple-toast" id="toastBox">
     <svg viewBox="0 0 24 24">
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
     </svg>
@@ -1086,7 +1148,7 @@
   <!-- Interactive JavaScript Logic -->
   <script>
     // =========================================
-    // Theme Management: Light by Default with Day/Night Switch
+    // Theme Management: Light by Default with Apple Day/Night Switch
     // =========================================
     const htmlElem = document.documentElement;
     const themeToggleBtn = document.getElementById('themeToggleBtn');
@@ -1096,10 +1158,10 @@
       htmlElem.setAttribute('data-theme', theme);
       if (theme === 'dark') {
         themeToggleLabel.textContent = 'Light';
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#080d19');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000000');
       } else {
         themeToggleLabel.textContent = 'Dark';
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f8fafc');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f2f2f7');
       }
       localStorage.setItem('qr_bio_theme', theme);
     }
@@ -1116,7 +1178,7 @@
     });
 
     // =========================================
-    // Toast Notification Utility
+    // Apple Toast Notification Utility
     // =========================================
     function showToast(message) {
       const toast = document.getElementById('toastBox');
@@ -1154,7 +1216,7 @@
     });
 
     // =========================================
-    // Share Profile Handler (Web Share API)
+    // Share Profile Handler (Apple Web Share API)
     // =========================================
     async function handleShare() {
       const shareData = {
