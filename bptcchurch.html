@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BPT Church, Malavilai Official | ஆதி பெந்தெகொஸ்தே சத்திய சபை</title>
+  
+  <!-- Meta SEO & Social Sharing -->
+  <meta name="description" content="Official Bio & Links page for BPT Church (ஆதி பெந்தெகொஸ்தே சத்திய சபை), Malavilai. Connect via Phone, WhatsApp, YouTube, Facebook, Instagram, and Website.">
+  <meta name="theme-color" content="#0d1527">
+  <meta property="og:title" content="BPT Church, Malavilai Official">
+  <meta property="og:description" content="Official links, social media, contact info, and location for BPT Church Malavilai.">
+  <meta property="og:image" content="bptc_church_logo.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="bptc_church_logo.jpeg">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-gradient: radial-gradient(circle at 50% 0%, #1e293b 0%, #0d1527 60%, #080d19 100%);
+      --card-bg: rgba(30, 41, 59, 0.65);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover-bg: rgba(51, 65, 85, 0.85);
+      --card-hover-border: rgba(217, 119, 6, 0.4);
+      --primary-accent: #f59e0b;
+      --primary-accent-glow: rgba(245, 158, 11, 0.25);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-tamil: #cbd5e1;
+      --quick-btn-bg: rgba(255, 255, 255, 0.06);
+      --quick-btn-border: rgba(255, 255, 255, 0.1);
+      --verified-color: #38bdf8;
+      --success-green: #10b981;
+      --wa-color: #25d366;
+      --yt-color: #ff0000;
+      --fb-color: #1877f2;
+      --ig-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+      --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-gradient);
+      background-attachment: fixed;
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 28px 16px 40px;
+      line-height: 1.5;
+    }
+
+    .tamil-text {
+      font-family: 'Noto Sans Tamil', sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Top Action Bar (Share & Contact) */
+    .top-utility-bar {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .icon-pill-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      background: var(--quick-btn-bg);
+      border: 1px solid var(--quick-btn-border);
+      border-radius: 9999px;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .icon-pill-btn:hover, .icon-pill-btn:active {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .icon-pill-btn svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+    }
+
+    /* Profile Header */
+    .profile-header {
+      text-align: center;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-wrapper {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .logo-img {
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.35), 0 8px 24px rgba(0, 0, 0, 0.4);
+      background: #0f172a;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .logo-wrapper:hover .logo-img {
+      transform: scale(1.04);
+      box-shadow: 0 0 0 4px var(--primary-accent), 0 10px 28px rgba(245, 158, 11, 0.3);
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 4px;
+      background: #0f172a;
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .verified-badge svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--verified-color);
+    }
+
+    .church-title-en {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .church-title-ta {
+      font-size: 19px;
+      font-weight: 700;
+      color: #f59e0b;
+      margin-bottom: 6px;
+      line-height: 1.4;
+      text-shadow: 0 2px 10px rgba(245, 158, 11, 0.2);
+    }
+
+    .church-badge-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 4px;
+    }
+
+    .tag-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+
+    .church-meta {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Quick Action Circle Buttons */
+    .quick-actions {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .quick-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      padding: 12px 6px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .quick-btn:hover, .quick-btn:active {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.25);
+      background: rgba(51, 65, 85, 0.85);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .quick-icon-wrap {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.05);
+      transition: all 0.2s ease;
+    }
+
+    .quick-btn:hover .quick-icon-wrap {
+      transform: scale(1.1);
+    }
+
+    .quick-btn.call .quick-icon-wrap { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+    .quick-btn.whatsapp .quick-icon-wrap { background: rgba(37, 211, 102, 0.15); color: var(--wa-color); }
+    .quick-btn.email .quick-icon-wrap { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+    .quick-btn.directions .quick-icon-wrap { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+
+    .quick-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Links Container */
+    .links-group {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      margin-bottom: 24px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      padding: 14px 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      text-decoration: none;
+      color: var(--text-main);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .link-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: transparent;
+      transition: background 0.2s ease;
+    }
+
+    .link-card:hover, .link-card:active {
+      transform: translateY(-2px) scale(1.01);
+      background: var(--card-hover-bg);
+      border-color: var(--card-hover-border);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .link-card:hover::before {
+      background: var(--primary-accent);
+    }
+
+    .link-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-right: 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .link-card:hover .link-icon-box {
+      transform: scale(1.08);
+    }
+
+    .link-icon-box svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .icon-website { color: #38bdf8; background: rgba(56, 189, 248, 0.12); }
+    .icon-youtube { color: #ff3333; background: rgba(255, 0, 0, 0.12); }
+    .icon-facebook { color: #3b82f6; background: rgba(24, 119, 242, 0.12); }
+    .icon-instagram { color: #f43f5e; background: rgba(244, 63, 94, 0.12); }
+    .icon-mail-spiritual { color: #fbbf24; background: rgba(251, 191, 36, 0.12); }
+    .icon-mail-admin { color: #34d399; background: rgba(52, 211, 153, 0.12); }
+    .icon-map { color: #f87171; background: rgba(248, 113, 113, 0.12); }
+
+    .link-info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .link-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .link-subtitle {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 1px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .link-arrow {
+      color: var(--text-muted);
+      flex-shrink: 0;
+      margin-left: 10px;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .link-card:hover .link-arrow {
+      transform: translateX(3px);
+      color: var(--primary-accent);
+    }
+
+    .link-arrow svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Section Headers */
+    .section-title {
+      width: 100%;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      margin: 10px 0 10px 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Address Card */
+    .address-card {
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .address-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .address-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .address-heading {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .address-body-ta {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text-tamil);
+      margin-bottom: 8px;
+    }
+
+    .address-body-en {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .address-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .addr-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 9px 12px;
+      border-radius: 10px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .addr-btn-primary {
+      background: #dc2626;
+      color: #ffffff;
+      border: none;
+    }
+
+    .addr-btn-primary:hover, .addr-btn-primary:active {
+      background: #b91c1c;
+      transform: translateY(-1px);
+    }
+
+    .addr-btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .addr-btn-secondary:hover, .addr-btn-secondary:active {
+      background: rgba(255, 255, 255, 0.14);
+      transform: translateY(-1px);
+    }
+
+    .addr-btn svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    /* Bottom Contact Save Button */
+    .save-contact-box {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .save-contact-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 20px;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #0f172a;
+      border: none;
+      border-radius: 16px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+      transition: all 0.2s ease;
+    }
+
+    .save-contact-btn:hover, .save-contact-btn:active {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+      filter: brightness(1.05);
+    }
+
+    .save-contact-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    footer p {
+      margin-bottom: 4px;
+    }
+
+    .footer-highlight {
+      color: #94a3b8;
+      font-weight: 600;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #1e293b;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 9999;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    .toast svg {
+      width: 16px;
+      height: 16px;
+      fill: #10b981;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Top Utility Bar: Share & Save -->
+    <div class="top-utility-bar">
+      <button class="icon-pill-btn" id="shareBtn" aria-label="Share this profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+        <span>Share</span>
+      </button>
+      <button class="icon-pill-btn" id="topSaveBtn" aria-label="Save contact to phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+          <polyline points="7 3 7 8 15 8"></polyline>
+        </svg>
+        <span>Save</span>
+      </button>
+    </div>
+
+    <!-- Profile Header -->
+    <header class="profile-header">
+      <div class="logo-wrapper">
+        <img class="logo-img" src="bptc_church_logo.jpeg" alt="BPT Church Official Logo">
+        <div class="verified-badge" title="Official Verified Church Account">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="church-badge-tag">
+        <span class="tag-dot"></span>
+        <span class="tamil-text">தலைமை இடம்: மலவிளை</span>
+      </div>
+
+      <h1 class="church-title-en">BPT Church, Malavilai</h1>
+      <h2 class="church-title-ta tamil-text">ஆதி பெந்தெகொஸ்தே சத்திய சபை</h2>
+      <p class="church-meta">Bible Pentecostal Truth Church • Official Links & Contact</p>
+    </header>
+
+    <!-- 4-Button Quick Action Row -->
+    <div class="quick-actions">
+      <!-- Call -->
+      <a href="tel:+919443016450" class="quick-btn call" aria-label="Call Church">
+        <div class="quick-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <span>Call</span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/919443016450?text=Greetings%2C%20BPT%20Church%20Malavilai" target="_blank" rel="noopener noreferrer" class="quick-btn whatsapp" aria-label="WhatsApp Message">
+        <div class="quick-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.53C8.86 7.53 8.56 7.6 8.31 7.87C8.06 8.14 7.35 8.8 7.35 10.15C7.35 11.5 8.33 12.8 8.47 12.98C8.61 13.16 10.37 15.88 13.1 16.94C15.37 17.82 15.83 17.65 16.32 17.6C16.81 17.55 17.91 16.94 18.14 16.3C18.37 15.66 18.37 15.11 18.3 15C18.23 14.89 18.05 14.82 17.78 14.69C17.51 14.55 16.19 13.9 15.94 13.81C15.69 13.72 15.51 13.68 15.33 13.95C15.15 14.22 14.64 14.82 14.48 15C14.33 15.19 14.17 15.21 13.9 15.08C13.63 14.94 12.76 14.66 11.72 13.74C10.91 13.02 10.36 12.13 10.2 11.86C10.04 11.59 10.18 11.44 10.32 11.31C10.45 11.18 10.6 10.98 10.74 10.82C10.88 10.66 10.93 10.54 11.02 10.36C11.11 10.18 11.07 10.02 11 9.89C10.93 9.76 10.37 8.39 10.14 7.84C9.92 7.31 9.69 7.38 9.53 7.37L9.04 7.53Z"/>
+          </svg>
+        </div>
+        <span>WhatsApp</span>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:spiritual@bptchurch.org" class="quick-btn email" aria-label="Send Email">
+        <div class="quick-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <span>Email</span>
+      </a>
+
+      <!-- Directions -->
+      <a href="https://maps.app.goo.gl/dvTGBeAuhQ67yqmF6?g_st=ic" target="_blank" rel="noopener noreferrer" class="quick-btn directions" aria-label="Church Map Location">
+        <div class="quick-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+          </svg>
+        </div>
+        <span>Navigate</span>
+      </a>
+    </div>
+
+    <!-- Primary Links Section -->
+    <div class="section-title">Official Online Channels</div>
+    <div class="links-group">
+
+      <!-- Official Website -->
+      <a href="https://bptchurch.org/" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon-box icon-website">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <div class="link-info">
+          <span class="link-title">Official Website</span>
+          <span class="link-subtitle">bptchurch.org • Ministries & Info</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- YouTube Channel -->
+      <a href="https://youtube.com/@bptchurch?si=BUdBBcxmonquo7_X" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon-box icon-youtube">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </div>
+        <div class="link-info">
+          <span class="link-title">YouTube Channel</span>
+          <span class="link-subtitle">@bptchurch • Sermons, Live Worship & Songs</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Facebook Page -->
+      <a href="https://www.facebook.com/share/1DWiR5E3ru/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon-box icon-facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </div>
+        <div class="link-info">
+          <span class="link-title">Facebook Page</span>
+          <span class="link-subtitle">BPT Church Community Updates</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Instagram Profile -->
+      <a href="https://www.instagram.com/bpt_church_malavilai?gwpx=MTlsaTMzZWYxcHI5ZA==" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon-box icon-instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </div>
+        <div class="link-info">
+          <span class="link-title">Instagram Profile</span>
+          <span class="link-subtitle">@bpt_church_malavilai</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Email & Inquiries Section -->
+    <div class="section-title">Email & Inquiries</div>
+    <div class="links-group">
+
+      <!-- Spiritual Email -->
+      <a href="mailto:spiritual@bptchurch.org" class="link-card">
+        <div class="link-icon-box icon-mail-spiritual">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <div class="link-info">
+          <span class="link-title">Spiritual & Prayer Request</span>
+          <span class="link-subtitle">spiritual@bptchurch.org</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Administrative Email -->
+      <a href="mailto:bptcmalavilai@gmail.com" class="link-card">
+        <div class="link-icon-box icon-mail-admin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <div class="link-info">
+          <span class="link-title">Office & General Administration</span>
+          <span class="link-subtitle">bptcmalavilai@gmail.com</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Church Address & Location Details -->
+    <div class="section-title">Headquarters & Address</div>
+    <div class="address-card">
+      <div class="address-header">
+        <div class="address-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </div>
+        <div>
+          <div class="address-heading">Church Headquarters (தலைமை இடம்)</div>
+          <div style="font-size: 12px; color: var(--text-muted);">Malavilai, Kanyakumari District</div>
+        </div>
+      </div>
+
+      <!-- Tamil Address from Banner -->
+      <div class="address-body-ta tamil-text">
+        ஆதி பெந்தெகொஸ்தே சத்திய சபை மலவிளை சாலை, செருப்பாலூர் அஞ்சல், Pin - 629 161, கன்னியாகுமரி மாவட்டம், தமிழ்நாடு, இந்தியா.
+      </div>
+
+      <!-- English Transliteration / Romanized -->
+      <div class="address-body-en">
+        BPT Church, Malavilai Road, Cheruppaloor Post, Pin - 629 161, Kanyakumari District, Tamil Nadu, India.
+      </div>
+
+      <!-- Actions -->
+      <div class="address-actions">
+        <a href="https://maps.app.goo.gl/dvTGBeAuhQ67yqmF6?g_st=ic" target="_blank" rel="noopener noreferrer" class="addr-btn addr-btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+          </svg>
+          <span>Open Maps</span>
+        </a>
+        <button id="copyAddressBtn" class="addr-btn addr-btn-secondary" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span id="copyAddrText">Copy Address</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 1-Tap Save Contact to Phone (vCard) -->
+    <div class="save-contact-box">
+      <button class="save-contact-btn" id="saveContactBtn" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="8.5" cy="7" r="4"></circle>
+          <line x1="20" y1="8" x2="20" y2="14"></line>
+          <line x1="23" y1="11" x2="17" y2="11"></line>
+        </svg>
+        <span>Save Church Contact to Phone</span>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><span class="footer-highlight">BPT Church, Malavilai</span> • Official QR Bio</p>
+      <p style="font-size: 11px; opacity: 0.75;">Designed for Quick Scan & Instant Access</p>
+    </footer>
+
+  </div>
+
+  <!-- Toast Element -->
+  <div class="toast" id="toastBox">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+    </svg>
+    <span id="toastMsg">Notification</span>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // Toast Notification Utility
+    function showToast(message) {
+      const toast = document.getElementById('toastBox');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
+
+    // Copy Address Handler
+    const fullAddress = `ஆதி பெந்தெகொஸ்தே சத்திய சபை മലവിளை சாலை, செருப்பாலூர் அஞ்சல் Pin - 629 161, கன்னியாகுமரி மாவட்டம், தமிழ்நாடு, இந்தியா.\nBPT Church, Malavilai Road, Cheruppaloor Post, Pin - 629 161, Kanyakumari District, Tamil Nadu, India.`;
+    
+    document.getElementById('copyAddressBtn').addEventListener('click', async function () {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(fullAddress);
+        } else {
+          const textarea = document.createElement('textarea');
+          textarea.value = fullAddress;
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        }
+        showToast('Address copied to clipboard!');
+      } catch (err) {
+        showToast('Address: Malavilai, Cheruppaloor 629161');
+      }
+    });
+
+    // Share Profile Handler (Web Share API)
+    async function handleShare() {
+      const shareData = {
+        title: 'BPT Church, Malavilai Official',
+        text: 'Connect with BPT Church (ஆதி பெந்தெகொஸ்தே சத்திய சபை), Malavilai - official links, contact & location:',
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          if (err.name !== 'AbortError') {
+            copyShareUrl();
+          }
+        }
+      } else {
+        copyShareUrl();
+      }
+    }
+
+    function copyShareUrl() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          showToast('Link copied to clipboard!');
+        });
+      } else {
+        showToast('Link: ' + window.location.href);
+      }
+    }
+
+    document.getElementById('shareBtn').addEventListener('click', handleShare);
+
+    // Save Contact as vCard (.vcf)
+    function downloadVCard() {
+      const vCardData = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        'FN;CHARSET=UTF-8:BPT Church Malavilai',
+        'N;CHARSET=UTF-8:Church;BPT;;;',
+        'ORG;CHARSET=UTF-8:Bible Pentecostal Truth Church (ஆதி பெந்தெகொஸ்தே சத்திய சபை)',
+        'TITLE;CHARSET=UTF-8:Headquarters: Malavilai',
+        'TEL;TYPE=CELL,VOICE,PREF:+919443016450',
+        'EMAIL;TYPE=INTERNET,PREF:spiritual@bptchurch.org',
+        'EMAIL;TYPE=INTERNET:bptcmalavilai@gmail.com',
+        'URL;TYPE=WORK:https://bptchurch.org',
+        'ADR;TYPE=WORK;CHARSET=UTF-8:;;Malavilai Road, Cheruppaloor Post;Kanyakumari;Tamil Nadu;629161;India',
+        'NOTE;CHARSET=UTF-8:ஆதி பெந்தெகொஸ்தே சத்திய சபை மலவிளை சாலை\\, செருப்பாலூர் அஞ்சல் Pin - 629 161\\, கன்னியாகுமரி மாவட்டம்\\, தமிழ்நாடு\\, இந்தியா.',
+        'END:VCARD'
+      ].join('\r\n');
+
+      const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'BPT_Church_Malavilai.vcf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      showToast('Contact file ready to save!');
+    }
+
+    document.getElementById('saveContactBtn').addEventListener('click', downloadVCard);
+    document.getElementById('topSaveBtn').addEventListener('click', downloadVCard);
+  </script>
+</body>
+</html>
