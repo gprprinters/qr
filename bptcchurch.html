@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,7 +7,7 @@
   
   <!-- Meta SEO & Social Sharing -->
   <meta name="description" content="Official Bio & Links page for BPT Church (ஆதி பெந்தெகொஸ்தே சத்திய சபை), Malavilai. Connect via Phone, WhatsApp, YouTube, Facebook, Instagram, and Website.">
-  <meta name="theme-color" content="#0d1527">
+  <meta name="theme-color" content="#f8fafc">
   <meta property="og:title" content="BPT Church, Malavilai Official">
   <meta property="og:description" content="Official links, social media, contact info, and location for BPT Church Malavilai.">
   <meta property="og:image" content="bptc_church_logo.jpeg">
@@ -19,30 +19,78 @@
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    :root {
+    /* =========================================
+       CSS VARIABLES: Light (Default) & Dark Themes
+       ========================================= */
+    :root, [data-theme="light"] {
+      --bg-color: #f8fafc;
+      --bg-gradient: radial-gradient(circle at 50% -10%, #ffffff 0%, #f1f5f9 60%, #e2e8f0 100%);
+      --bg-watermark-opacity: 0.06;
+      --card-bg: rgba(255, 255, 255, 0.88);
+      --card-border: rgba(148, 163, 184, 0.28);
+      --card-hover-bg: #ffffff;
+      --card-hover-border: rgba(217, 119, 6, 0.45);
+      --primary-accent: #d97706;
+      --primary-accent-glow: rgba(217, 119, 6, 0.22);
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-tamil: #1e293b;
+      --tamil-title: #b45309;
+      --quick-btn-bg: rgba(255, 255, 255, 0.92);
+      --quick-btn-border: rgba(203, 213, 225, 0.8);
+      --quick-btn-hover: #ffffff;
+      --verified-color: #0284c7;
+      --pill-bg: rgba(255, 255, 255, 0.88);
+      --pill-border: rgba(203, 213, 225, 0.8);
+      --pill-text: #334155;
+      --pill-save-bg: #d97706;
+      --pill-save-text: #ffffff;
+      --shadow-sm: 0 3px 8px rgba(15, 23, 42, 0.06);
+      --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.12);
+      --map-border: rgba(203, 213, 225, 0.8);
+      --footer-bg: rgba(255, 255, 255, 0.92);
+      --footer-border: rgba(217, 119, 6, 0.28);
+      --gpr-glow-color: #d97706;
+      --gpr-glow-shadow: 0 0 12px rgba(217, 119, 6, 0.35);
+      --save-btn-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      --save-btn-text: #0f172a;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #080d19;
       --bg-gradient: radial-gradient(circle at 50% 0%, #1e293b 0%, #0d1527 60%, #080d19 100%);
+      --bg-watermark-opacity: 0.055;
       --card-bg: rgba(30, 41, 59, 0.65);
       --card-border: rgba(255, 255, 255, 0.08);
       --card-hover-bg: rgba(51, 65, 85, 0.85);
-      --card-hover-border: rgba(217, 119, 6, 0.4);
+      --card-hover-border: rgba(245, 158, 11, 0.4);
       --primary-accent: #f59e0b;
       --primary-accent-glow: rgba(245, 158, 11, 0.25);
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --text-tamil: #cbd5e1;
+      --tamil-title: #f59e0b;
       --quick-btn-bg: rgba(255, 255, 255, 0.06);
       --quick-btn-border: rgba(255, 255, 255, 0.1);
+      --quick-btn-hover: rgba(51, 65, 85, 0.85);
       --verified-color: #38bdf8;
-      --success-green: #10b981;
-      --wa-color: #25d366;
-      --yt-color: #ff0000;
-      --fb-color: #1877f2;
-      --ig-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+      --pill-bg: rgba(255, 255, 255, 0.07);
+      --pill-border: rgba(255, 255, 255, 0.12);
+      --pill-text: #f1f5f9;
+      --pill-save-bg: #f59e0b;
+      --pill-save-text: #0f172a;
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.25);
       --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.35);
+      --map-border: rgba(255, 255, 255, 0.1);
+      --footer-bg: rgba(30, 41, 59, 0.75);
+      --footer-border: rgba(245, 158, 11, 0.3);
+      --gpr-glow-color: #fbbf24;
+      --gpr-glow-shadow: 0 0 16px rgba(245, 158, 11, 0.5);
+      --save-btn-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      --save-btn-text: #0f172a;
     }
 
     * {
@@ -54,15 +102,36 @@
 
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg-gradient);
+      background: var(--bg-color);
+      background-image: var(--bg-gradient);
       background-attachment: fixed;
       color: var(--text-main);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 28px 16px 40px;
+      padding: 20px 16px 36px;
       line-height: 1.5;
+      position: relative;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Fixed Watermark Background (bptc_bg.jpg) with low opacity */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('bptc_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: var(--bg-watermark-opacity);
+      pointer-events: none;
+      z-index: -1;
+      transition: opacity 0.3s ease;
     }
 
     .tamil-text {
@@ -75,51 +144,107 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
+      z-index: 1;
     }
 
-    /* Top Action Bar (Share & Contact) */
+    /* =========================================
+       Top Utility Bar (Day/Light Switch, Share, Save as Contact)
+       ========================================= */
     .top-utility-bar {
       width: 100%;
       display: flex;
-      justify-content: flex-end;
-      gap: 10px;
-      margin-bottom: 12px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .top-left-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .top-right-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .icon-pill-btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 14px;
-      font-size: 13px;
+      padding: 7px 12px;
+      font-size: 12.5px;
       font-weight: 600;
-      color: var(--text-main);
-      background: var(--quick-btn-bg);
-      border: 1px solid var(--quick-btn-border);
+      color: var(--pill-text);
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
       border-radius: 9999px;
       cursor: pointer;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      transition: all 0.2s ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       text-decoration: none;
+      box-shadow: var(--shadow-sm);
     }
 
     .icon-pill-btn:hover, .icon-pill-btn:active {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.25);
       transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-color: var(--primary-accent);
     }
 
     .icon-pill-btn svg {
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       flex-shrink: 0;
     }
 
-    /* Profile Header */
+    /* Save as Contact prominent top button */
+    .save-contact-pill-btn {
+      background: var(--pill-save-bg) !important;
+      color: var(--pill-save-text) !important;
+      border: none !important;
+      font-weight: 700 !important;
+      box-shadow: 0 2px 8px var(--primary-accent-glow) !important;
+    }
+
+    .save-contact-pill-btn:hover, .save-contact-pill-btn:active {
+      filter: brightness(1.08);
+      transform: translateY(-1.5px) scale(1.02);
+      box-shadow: 0 4px 12px var(--primary-accent-glow) !important;
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle-btn {
+      padding: 7px 11px;
+    }
+
+    .theme-icon-sun {
+      display: none;
+    }
+
+    .theme-icon-moon {
+      display: block;
+    }
+
+    [data-theme="dark"] .theme-icon-sun {
+      display: block;
+    }
+
+    [data-theme="dark"] .theme-icon-moon {
+      display: none;
+    }
+
+    /* =========================================
+       Profile Header
+       ========================================= */
     .profile-header {
       text-align: center;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -127,63 +252,46 @@
 
     .logo-wrapper {
       position: relative;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .logo-img {
-      width: 108px;
-      height: 108px;
+      width: 104px;
+      height: 104px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.35), 0 8px 24px rgba(0, 0, 0, 0.4);
-      background: #0f172a;
+      box-shadow: 0 0 0 3px var(--primary-accent), 0 8px 24px rgba(0, 0, 0, 0.15);
+      background: #ffffff;
       transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 
     .logo-wrapper:hover .logo-img {
       transform: scale(1.04);
-      box-shadow: 0 0 0 4px var(--primary-accent), 0 10px 28px rgba(245, 158, 11, 0.3);
+      box-shadow: 0 0 0 4px var(--primary-accent), 0 10px 28px var(--primary-accent-glow);
     }
 
     .verified-badge {
       position: absolute;
       bottom: 2px;
-      right: 4px;
-      background: #0f172a;
+      right: 3px;
+      background: #ffffff;
       border-radius: 50%;
-      width: 26px;
-      height: 26px;
+      width: 25px;
+      height: 25px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+
+    [data-theme="dark"] .verified-badge {
+      background: #0f172a;
     }
 
     .verified-badge svg {
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
       fill: var(--verified-color);
-    }
-
-    .church-title-en {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: #ffffff;
-      margin-bottom: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-
-    .church-title-ta {
-      font-size: 19px;
-      font-weight: 700;
-      color: #f59e0b;
-      margin-bottom: 6px;
-      line-height: 1.4;
-      text-shadow: 0 2px 10px rgba(245, 158, 11, 0.2);
     }
 
     .church-badge-tag {
@@ -191,13 +299,17 @@
       align-items: center;
       gap: 6px;
       background: rgba(16, 185, 129, 0.12);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #059669;
       font-size: 12.5px;
       font-weight: 600;
-      padding: 4px 12px;
+      padding: 3px 12px;
       border-radius: 9999px;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+    }
+
+    [data-theme="dark"] .church-badge-tag {
+      color: #34d399;
     }
 
     .tag-dot {
@@ -215,29 +327,47 @@
       100% { transform: scale(0.95); opacity: 0.8; }
     }
 
-    .church-meta {
-      font-size: 13.5px;
-      color: var(--text-muted);
-      margin-top: 4px;
+    .church-title-en {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      margin-bottom: 3px;
+      line-height: 1.25;
     }
 
-    /* Quick Action Circle Buttons */
+    .church-title-ta {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--tamil-title);
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+
+    .church-meta {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* =========================================
+       Quick Action Circle Buttons (Call, WhatsApp, Email, Map)
+       ========================================= */
     .quick-actions {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
+      gap: 10px;
       width: 100%;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     .quick-btn {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 7px;
-      padding: 12px 6px;
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
+      gap: 6px;
+      padding: 12px 4px;
+      background: var(--quick-btn-bg);
+      border: 1px solid var(--quick-btn-border);
       border-radius: 16px;
       color: var(--text-main);
       text-decoration: none;
@@ -251,49 +381,75 @@
 
     .quick-btn:hover, .quick-btn:active {
       transform: translateY(-2px);
-      border-color: rgba(255, 255, 255, 0.25);
-      background: rgba(51, 65, 85, 0.85);
+      background: var(--quick-btn-hover);
+      border-color: var(--primary-accent);
       box-shadow: var(--shadow-lg);
     }
 
     .quick-icon-wrap {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(255, 255, 255, 0.05);
-      transition: all 0.2s ease;
+      transition: transform 0.2s ease;
     }
 
     .quick-btn:hover .quick-icon-wrap {
       transform: scale(1.1);
     }
 
-    .quick-btn.call .quick-icon-wrap { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
-    .quick-btn.whatsapp .quick-icon-wrap { background: rgba(37, 211, 102, 0.15); color: var(--wa-color); }
-    .quick-btn.email .quick-icon-wrap { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
-    .quick-btn.directions .quick-icon-wrap { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+    .quick-btn.call .quick-icon-wrap { background: rgba(56, 189, 248, 0.16); color: #0284c7; }
+    .quick-btn.whatsapp .quick-icon-wrap { background: rgba(37, 211, 102, 0.16); color: #16a34a; }
+    .quick-btn.email .quick-icon-wrap { background: rgba(245, 158, 11, 0.16); color: #d97706; }
+    .quick-btn.directions .quick-icon-wrap { background: rgba(239, 68, 68, 0.16); color: #dc2626; }
+
+    [data-theme="dark"] .quick-btn.call .quick-icon-wrap { color: #38bdf8; }
+    [data-theme="dark"] .quick-btn.whatsapp .quick-icon-wrap { color: #25d366; }
+    [data-theme="dark"] .quick-btn.email .quick-icon-wrap { color: #fbbf24; }
+    [data-theme="dark"] .quick-btn.directions .quick-icon-wrap { color: #f87171; }
 
     .quick-btn svg {
       width: 20px;
       height: 20px;
     }
 
-    /* Links Container */
+    /* =========================================
+       Links Cards
+       ========================================= */
+    .section-title {
+      width: 100%;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin: 10px 0 10px 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--card-border);
+    }
+
     .links-group {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 13px;
-      margin-bottom: 24px;
+      gap: 12px;
+      margin-bottom: 22px;
     }
 
     .link-card {
       display: flex;
       align-items: center;
-      padding: 14px 16px;
+      padding: 13px 16px;
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 16px;
@@ -319,7 +475,7 @@
     }
 
     .link-card:hover, .link-card:active {
-      transform: translateY(-2px) scale(1.01);
+      transform: translateY(-2px) scale(1.008);
       background: var(--card-hover-bg);
       border-color: var(--card-hover-border);
       box-shadow: var(--shadow-lg);
@@ -338,8 +494,8 @@
       justify-content: center;
       flex-shrink: 0;
       margin-right: 14px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--card-border);
       transition: transform 0.2s ease;
     }
 
@@ -352,13 +508,19 @@
       height: 22px;
     }
 
-    .icon-website { color: #38bdf8; background: rgba(56, 189, 248, 0.12); }
-    .icon-youtube { color: #ff3333; background: rgba(255, 0, 0, 0.12); }
-    .icon-facebook { color: #3b82f6; background: rgba(24, 119, 242, 0.12); }
-    .icon-instagram { color: #f43f5e; background: rgba(244, 63, 94, 0.12); }
-    .icon-mail-spiritual { color: #fbbf24; background: rgba(251, 191, 36, 0.12); }
-    .icon-mail-admin { color: #34d399; background: rgba(52, 211, 153, 0.12); }
-    .icon-map { color: #f87171; background: rgba(248, 113, 113, 0.12); }
+    .icon-website { color: #0284c7; background: rgba(2, 132, 199, 0.12); }
+    .icon-youtube { color: #dc2626; background: rgba(220, 38, 38, 0.12); }
+    .icon-facebook { color: #2563eb; background: rgba(37, 99, 235, 0.12); }
+    .icon-instagram { color: #db2777; background: rgba(219, 39, 119, 0.12); }
+    .icon-mail-spiritual { color: #d97706; background: rgba(217, 119, 6, 0.12); }
+    .icon-mail-admin { color: #059669; background: rgba(5, 150, 105, 0.12); }
+
+    [data-theme="dark"] .icon-website { color: #38bdf8; background: rgba(56, 189, 248, 0.15); }
+    [data-theme="dark"] .icon-youtube { color: #ff4d4d; background: rgba(255, 0, 0, 0.15); }
+    [data-theme="dark"] .icon-facebook { color: #3b82f6; background: rgba(59, 130, 246, 0.15); }
+    [data-theme="dark"] .icon-instagram { color: #f43f5e; background: rgba(244, 63, 94, 0.15); }
+    [data-theme="dark"] .icon-mail-spiritual { color: #fbbf24; background: rgba(251, 191, 36, 0.15); }
+    [data-theme="dark"] .icon-mail-admin { color: #34d399; background: rgba(52, 211, 153, 0.15); }
 
     .link-info {
       flex-grow: 1;
@@ -370,7 +532,7 @@
     .link-title {
       font-size: 15px;
       font-weight: 700;
-      color: #ffffff;
+      color: var(--text-main);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -402,35 +564,16 @@
       height: 18px;
     }
 
-    /* Section Headers */
-    .section-title {
-      width: 100%;
-      font-size: 12.5px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #94a3b8;
-      margin: 10px 0 10px 4px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .section-title::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    /* Address Card */
+    /* =========================================
+       Headquarters Address & Live Embedded Map Card
+       ========================================= */
     .address-card {
       width: 100%;
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 18px;
-      padding: 18px;
-      margin-bottom: 24px;
+      padding: 16px;
+      margin-bottom: 22px;
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       box-shadow: var(--shadow-sm);
@@ -447,32 +590,56 @@
       width: 36px;
       height: 36px;
       border-radius: 10px;
-      background: rgba(239, 68, 68, 0.15);
-      color: #f87171;
+      background: rgba(239, 68, 68, 0.14);
+      color: #dc2626;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
     }
 
+    [data-theme="dark"] .address-icon {
+      color: #f87171;
+    }
+
     .address-heading {
       font-size: 14.5px;
       font-weight: 700;
-      color: #ffffff;
+      color: var(--text-main);
     }
 
     .address-body-ta {
       font-size: 13.5px;
-      line-height: 1.6;
+      line-height: 1.55;
       color: var(--text-tamil);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+      font-weight: 500;
     }
 
     .address-body-en {
-      font-size: 13px;
+      font-size: 12.5px;
       line-height: 1.5;
       color: var(--text-muted);
       margin-bottom: 14px;
+    }
+
+    /* Embedded Google Map Container */
+    .map-embed-container {
+      width: 100%;
+      height: 190px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 14px;
+      border: 1px solid var(--map-border);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      background: #e2e8f0;
+    }
+
+    .map-embed-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
     }
 
     .address-actions {
@@ -507,13 +674,14 @@
     }
 
     .addr-btn-secondary {
-      background: rgba(255, 255, 255, 0.08);
+      background: var(--quick-btn-bg);
       color: var(--text-main);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--card-border);
     }
 
     .addr-btn-secondary:hover, .addr-btn-secondary:active {
-      background: rgba(255, 255, 255, 0.14);
+      background: var(--card-hover-bg);
+      border-color: var(--primary-accent);
       transform: translateY(-1px);
     }
 
@@ -522,10 +690,12 @@
       height: 15px;
     }
 
-    /* Bottom Contact Save Button */
+    /* =========================================
+       Bottom Save Contact Card
+       ========================================= */
     .save-contact-box {
       width: 100%;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     .save-contact-btn {
@@ -534,21 +704,21 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      padding: 15px 20px;
-      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-      color: #0f172a;
+      padding: 14px 20px;
+      background: var(--save-btn-gradient);
+      color: var(--save-btn-text);
       border: none;
       border-radius: 16px;
       font-size: 15px;
       font-weight: 800;
       cursor: pointer;
-      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+      box-shadow: 0 4px 14px var(--primary-accent-glow);
       transition: all 0.2s ease;
     }
 
     .save-contact-btn:hover, .save-contact-btn:active {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+      box-shadow: 0 6px 20px var(--primary-accent-glow);
       filter: brightness(1.05);
     }
 
@@ -557,21 +727,80 @@
       height: 20px;
     }
 
-    /* Footer */
+    /* =========================================
+       Footer: Powered by G.P.R Offset Printers (Clickable with Glow)
+       ========================================= */
     footer {
-      text-align: center;
-      color: #64748b;
-      font-size: 12px;
-      margin-top: 8px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6px;
     }
 
-    footer p {
-      margin-bottom: 4px;
+    .gpr-footer-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      background: var(--footer-bg);
+      border: 1px solid var(--footer-border);
+      text-decoration: none;
+      box-shadow: var(--gpr-glow-shadow);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
 
-    .footer-highlight {
-      color: #94a3b8;
-      font-weight: 600;
+    .gpr-footer-card:hover, .gpr-footer-card:active {
+      transform: translateY(-2px) scale(1.03);
+      border-color: var(--gpr-glow-color);
+      box-shadow: 0 0 22px var(--gpr-glow-color);
+    }
+
+    .gpr-logo {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      object-fit: contain;
+      flex-shrink: 0;
+      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.2));
+    }
+
+    .gpr-text-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+      font-size: 12.5px;
+    }
+
+    .gpr-powered-label {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .gpr-brand-name {
+      color: var(--gpr-glow-color);
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      text-shadow: 0 0 6px var(--primary-accent-glow);
+    }
+
+    .gpr-ext-icon {
+      width: 12px;
+      height: 12px;
+      color: var(--gpr-glow-color);
+      opacity: 0.8;
+      margin-left: 2px;
+    }
+
+    .footer-sub-note {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      opacity: 0.8;
     }
 
     /* Toast Notification */
@@ -580,7 +809,7 @@
       bottom: 24px;
       left: 50%;
       transform: translateX(-50%) translateY(100px);
-      background: #1e293b;
+      background: #0f172a;
       color: #ffffff;
       padding: 10px 18px;
       border-radius: 9999px;
@@ -613,26 +842,55 @@
 
   <div class="container">
 
-    <!-- Top Utility Bar: Share & Save -->
+    <!-- Top Utility Bar: Day/Light Switch, Share, and Save as Contact Button -->
     <div class="top-utility-bar">
-      <button class="icon-pill-btn" id="shareBtn" aria-label="Share this profile">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="18" cy="5" r="3"></circle>
-          <circle cx="6" cy="12" r="3"></circle>
-          <circle cx="18" cy="19" r="3"></circle>
-          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-        </svg>
-        <span>Share</span>
-      </button>
-      <button class="icon-pill-btn" id="topSaveBtn" aria-label="Save contact to phone">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
-          <polyline points="17 21 17 13 7 13 7 21"></polyline>
-          <polyline points="7 3 7 8 15 8"></polyline>
-        </svg>
-        <span>Save</span>
-      </button>
+      <div class="top-left-actions">
+        <!-- Day/Night Switch (Default Light) -->
+        <button class="icon-pill-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Day and Night mode" title="Switch Theme">
+          <!-- Sun Icon (shown in Dark mode) -->
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in Light mode) -->
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span id="themeToggleLabel">Dark</span>
+        </button>
+
+        <!-- Share Button -->
+        <button class="icon-pill-btn" id="shareBtn" aria-label="Share this profile" title="Share profile link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          <span>Share</span>
+        </button>
+      </div>
+
+      <div class="top-right-actions">
+        <!-- Clear "Save as Contact" Pill Button -->
+        <button class="icon-pill-btn save-contact-pill-btn" id="topSaveBtn" aria-label="Save as Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="8.5" cy="7" r="4"></circle>
+            <line x1="20" y1="8" x2="20" y2="14"></line>
+            <line x1="23" y1="11" x2="17" y2="11"></line>
+          </svg>
+          <span>Save as Contact</span>
+        </button>
+      </div>
     </div>
 
     <!-- Profile Header -->
@@ -825,8 +1083,8 @@
 
     </div>
 
-    <!-- Church Address & Location Details -->
-    <div class="section-title">Headquarters & Address</div>
+    <!-- Church Headquarters, Live Google Map & Location Details -->
+    <div class="section-title">Headquarters & Location Map</div>
     <div class="address-card">
       <div class="address-header">
         <div class="address-icon">
@@ -851,13 +1109,24 @@
         BPT Church, Malavilai Road, Cheruppaloor Post, Pin - 629 161, Kanyakumari District, Tamil Nadu, India.
       </div>
 
-      <!-- Actions -->
+      <!-- Live Google Map Embed -->
+      <div class="map-embed-container">
+        <iframe 
+          title="BPT Church Malavilai Location Map"
+          src="https://maps.google.com/maps?q=BPT+CHURCH+MALAVILAI,+Malavilai,+Ayacode,+Tamil+Nadu+629161&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Map & Copy Actions -->
       <div class="address-actions">
         <a href="https://maps.app.goo.gl/dvTGBeAuhQ67yqmF6?g_st=ic" target="_blank" rel="noopener noreferrer" class="addr-btn addr-btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
           </svg>
-          <span>Open Maps</span>
+          <span>Open in Maps</span>
         </a>
         <button id="copyAddressBtn" class="addr-btn addr-btn-secondary" type="button">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -878,14 +1147,25 @@
           <line x1="20" y1="8" x2="20" y2="14"></line>
           <line x1="23" y1="11" x2="17" y2="11"></line>
         </svg>
-        <span>Save Church Contact to Phone</span>
+        <span>Save as Contact to Phone</span>
       </button>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer: Powered by G.P.R Offset Printers (Clickable with Glow Effect) -->
     <footer>
-      <p><span class="footer-highlight">BPT Church, Malavilai</span> • Official QR Bio</p>
-      <p style="font-size: 11px; opacity: 0.75;">Designed for Quick Scan & Instant Access</p>
+      <a href="http://gprprinters.vercel.app" target="_blank" rel="noopener noreferrer" class="gpr-footer-card" title="Visit G.P.R Offset Printers">
+        <img src="gpr_logo_250px.png" alt="G.P.R Offset Printers Logo" class="gpr-logo">
+        <div class="gpr-text-wrap">
+          <span class="gpr-powered-label">Powered by</span>
+          <span class="gpr-brand-name">G.P.R Offset Printers, Tirunelveli</span>
+        </div>
+        <svg class="gpr-ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+      <span class="footer-sub-note">Smart QR Bio & Print Solutions</span>
     </footer>
 
   </div>
@@ -900,7 +1180,39 @@
 
   <!-- Interactive JavaScript Logic -->
   <script>
+    // =========================================
+    // Theme Management: Light by Default with Day/Night Switch
+    // =========================================
+    const htmlElem = document.documentElement;
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeToggleLabel = document.getElementById('themeToggleLabel');
+
+    function applyTheme(theme) {
+      htmlElem.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        themeToggleLabel.textContent = 'Light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#080d19');
+      } else {
+        themeToggleLabel.textContent = 'Dark';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f8fafc');
+      }
+      localStorage.setItem('qr_bio_theme', theme);
+    }
+
+    // Initialize Theme (Default to Light)
+    const savedTheme = localStorage.getItem('qr_bio_theme') || 'light';
+    applyTheme(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = htmlElem.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      applyTheme(newTheme);
+      showToast(newTheme === 'dark' ? 'Dark theme enabled' : 'Light theme enabled');
+    });
+
+    // =========================================
     // Toast Notification Utility
+    // =========================================
     function showToast(message) {
       const toast = document.getElementById('toastBox');
       const toastMsg = document.getElementById('toastMsg');
@@ -911,8 +1223,10 @@
       }, 2600);
     }
 
+    // =========================================
     // Copy Address Handler
-    const fullAddress = `ஆதி பெந்தெகொஸ்தே சத்திய சபை മലവിளை சாலை, செருப்பாலூர் அஞ்சல் Pin - 629 161, கன்னியாகுமரி மாவட்டம், தமிழ்நாடு, இந்தியா.\nBPT Church, Malavilai Road, Cheruppaloor Post, Pin - 629 161, Kanyakumari District, Tamil Nadu, India.`;
+    // =========================================
+    const fullAddress = `ஆதி பெந்தெகொஸ்தே சத்திய சபை மலவிளை சாலை, செருப்பாலூர் அஞ்சல் Pin - 629 161, கன்னியாகுமரி மாவட்டம், தமிழ்நாடு, இந்தியா.\nBPT Church, Malavilai Road, Cheruppaloor Post, Pin - 629 161, Kanyakumari District, Tamil Nadu, India.`;
     
     document.getElementById('copyAddressBtn').addEventListener('click', async function () {
       try {
@@ -934,7 +1248,9 @@
       }
     });
 
+    // =========================================
     // Share Profile Handler (Web Share API)
+    // =========================================
     async function handleShare() {
       const shareData = {
         title: 'BPT Church, Malavilai Official',
@@ -967,7 +1283,9 @@
 
     document.getElementById('shareBtn').addEventListener('click', handleShare);
 
+    // =========================================
     // Save Contact as vCard (.vcf)
+    // =========================================
     function downloadVCard() {
       const vCardData = [
         'BEGIN:VCARD',
@@ -994,7 +1312,7 @@
       link.click();
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
-      showToast('Contact file ready to save!');
+      showToast('Contact ready to save!');
     }
 
     document.getElementById('saveContactBtn').addEventListener('click', downloadVCard);
